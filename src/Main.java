@@ -54,16 +54,18 @@ public class Main {
 		
 		
 		// Début du jeu (Tour 1) :
-
+		Domino[] pioche = plateau.piocherDomino(4);
+		afficherDomino(pioche);
+		
 		// Tour (n+1) :
 
 		// Fin du Jeu :
 
 //--------------------------------Affichage (pour test)--------------------------------------------\\		
 		
-		Domino[] pioche = plateau.piocherDomino(4);
-		afficherDomino(pioche);
-		afficherDomino(plateau.tousLesDominos);
+		
+		
+		afficherDomino(Plateau.tousLesDominos);
 		
 	}
 	
@@ -73,8 +75,8 @@ public class Main {
 		 */
 		for (int i = 0; i < liste.length; i++) {
 			try {
-				System.out.print(liste[i].nbCouronne1 + "  " + liste[i].type1 + "  "
-						+ liste[i].nbCouronne2 + "  " + liste[i].type2 + "  " + liste[i].numeroDomino + "  ");
+				System.out.print(liste[i].numeroDomino + " : " + liste[i].nbCouronne1 + "  " + liste[i].type1 + "  "
+						+ liste[i].nbCouronne2 + "  " + liste[i].type2);
 				System.out.println(" ");
 			} catch (Exception NullPointerException) {
 				System.out.println(i + 1);

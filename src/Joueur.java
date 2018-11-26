@@ -14,6 +14,7 @@ public class Joueur {
 		 * Cette fonction a pour but de placer son roi sur le domino de son choix
 		 * (déterminé par la place de ce dernier)
 		 */
+		
 	}
 
 	public void jouer() {

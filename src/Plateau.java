@@ -102,4 +102,14 @@ public class Plateau {
 		Collections.sort(choisi);
 		return choisi;
 	}
+	
+	public static void distribuerRoi(Joueur [] joueurs) {
+		/*
+		 * Cette fonction a pour but de ditribuer les rois en début de tour
+		 */
+		
+		for (int i = 0; i < joueurs.length; i++) {
+			
+		}
+	}
 }
